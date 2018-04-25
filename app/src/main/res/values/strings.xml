@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Madrid Architecture Guide</string>
+    <string name="day_one">Day 1</string>
+    <string name="day_two">Day 2</string>
+    <string name="day_three">Day 3</string>
+    <string name="day_four">Day 4</string>
+
+</resources>

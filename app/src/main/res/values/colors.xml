@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#B0BEC5</color>
+    <color name="day_one">#FFFFFF</color>
+    <color name="day_two">#FFFFFF</color>
+    <color name="day_three">#FFFFFF</color>
+    <color name="day_four">#FFFFFF</color>
+</resources>
