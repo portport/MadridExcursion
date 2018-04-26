@@ -5,4 +5,80 @@
     <string name="day_three">Day 3</string>
     <string name="day_four">Day 4</string>
 
+    <string name="caixa_forum">Caixa Forum</string>
+    <string name="caixa_forum_address">Paseo del Prado, 36, 28014 Madrid</string>
+
+    <string name="hotel_victoria">Hotel Victoria 4</string>
+    <string name="hotel_victoria_address">Calle de la Victoria 4, 28015 Madrid</string>
+
+    <string name="medialab_prado">MediaLab Prado</string>
+    <string name="medialab_prado_address">Calle de la Alameda, 15, 28014 Madrid</string>
+
+    <string name="museo_del_prado">Museo del Prado Extension</string>
+    <string name="museo_del_prado_address">Paseo del Prado, s/n, 28014 Madrid</string>
+
+    <string name="la_latina">Evening in La Latina</string>
+    <string name="la_latina_address">La Latina, Madrid</string>
+
+    <string name="barcelo_market">Barceló Market</string>
+    <string name="barcelo_market_address">Calle Barceló, 6, 28004 Madrid</string>
+
+    <string name="fundacion_giner">Fundacion Giner de los Rios</string>
+    <string name="fundacion_giner_address">Paseo del General Martínez Campos, 14, 28010 Madrid</string>
+
+    <string name="de_la_sota">Fundacion de la Sota</string>
+    <string name="lde_la_sota_address">Calle de Bretón de los Herreros, 66, 28003 Madrid</string>
+
+    <string name="torre_bbva">Torre BBVA</string>
+    <string name="torre_bbva_address">Paseo de la Castellana, 81, 28046 Madrid</string>
+
+    <string name="gymnasio_maravillas">Gymnasio Maravillas</string>
+    <string name="gymnasio_maravillas_address">Calle Guadalquivir, 9, 28002 Madrid</string>
+
+    <string name="higueras_fundacion">Fundacion Higueras Diaz</string>
+    <string name="higueras_fundacion_address">Calle del Maestro Lassalle, 36, 28016 Madrid</string>
+
+    <string name="torres_blancas">Torres Blancas</string>
+    <string name="torres_blancas_address">Av. de América, 37, 28002 Madrid</string>
+
+    <string name="salamanca">Evening in Salamanca</string>
+    <string name="salamanca_address">Salamanca, Madrid</string>
+
+    <string name="santa_ana">Santa Ana y la Esperanza</string>
+    <string name="santa_ana_address">Calle de la Cañada, 35, 28030 Madrid</string>
+
+    <string name="cesar_carlos">Cesar Carlos Residence</string>
+    <string name="cesar_carlos_address">3 Calle de Ramón Menéndez Pidal, 28040 Madrid</string>
+
+    <string name="hipodromo_zarzuela">Zarzuela Racecourse</string>
+    <string name="hipodromo_zarzuela_address">A-6, Km 8, 28023 Madrid</string>
+
+    <string name="bbva_hq">BBVA new HQ</string>
+    <string name="bbva_hq_address">Calle Azul, 4, 28050 Madrid</string>
+
+    <string name="edificio_mirador">Edificio Mirador</string>
+    <string name="edificio_mirador_address">Calle Princesa de Éboli, 19, 28050 Madrid</string>
+
+    <string name="malasana">Night walk in Malasaña</string>
+    <string name="malasana_address">Malasaña, Madrid</string>
+
+    <string name="reina_sofia">Museo Reina Sofia</string>
+    <string name="reina_sofia_address">Calle de Santa Isabel, 52, 28012 Madrid</string>
+
+    <string name="norman_foster_foundation">Norman Foster Foundation</string>
+    <string name="norman_foster_foundation_address">Calle del Monte Esquinza, 48, 28010 Madrid</string>
+
+    <string name="matadero_madrid">Matadero Madrid</string>
+    <string name="matadero_madrid_address">Paseo de la Chopera, 14, 28045 Madrid</string>
+
+    <string name="arganzuela_bridge">Arganzuela Bridge</string>
+    <string name="arganzuela_bridge_address">Av del Manzanares, 134, 28019 Madrid</string>
+
+    <string name="carabanchel_housing">Carabanchel Public Housing</string>
+    <string name="carabanchel_housing_address">Calle de los Morales, 25, 28054 Madrid</string>
+
+    <string name="restaurant">Restaurant</string>
+    <string name="restaurant_address">Mto be defined</string>
+
+
 </resources>

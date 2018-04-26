@@ -22,21 +22,20 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View listItemView = convertView;
 
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
         Place currentPlace = getItem(position);
 
-        TextView placeTextView = (TextView) listItemView.findViewById(R.id.place_text_view);
+        TextView placeTextView = convertView.findViewById(R.id.place_text_view);
         placeTextView.setText(currentPlace.getPlaceName());
 
-        TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
+        TextView addressTextView = convertView.findViewById(R.id.address_text_view);
         addressTextView.setText(currentPlace.getPlaceAdress());
 
-        ImageView thumbnailView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView thumbnailView = convertView.findViewById(R.id.image);
         if (currentPlace.hasImage()) {
             thumbnailView.setImageResource(currentPlace.getImageResourceId());
             thumbnailView.setVisibility(View.VISIBLE);
@@ -44,10 +43,10 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             thumbnailView.setVisibility(View.GONE);
         }
 
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer = convertView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(), mColorId);
         textContainer.setBackgroundColor(color);
 
-        return listItemView;
+        return convertView;
     }
 }

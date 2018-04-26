@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -25,15 +24,15 @@ public class MondayFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.places_list, container, false);
 
-        ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Hotel Victoria 4", "Calle de la Victoria 4, 28015 Madrid", R.drawable.hotel_victoria));
-        places.add(new Place("MediaLab Prado", "Calle de la Alameda, 15, 28014 Madrid", R.drawable.medialab_prado));
-        places.add(new Place("Caixa Forum", "Paseo del Prado, 36, 28014 Madrid", R.drawable.caixa_forum));
-        places.add(new Place("Museo del Prado Extension", "Paseo del Prado, s/n, 28014 Madrid", R.drawable.museo_del_prado));
-        places.add(new Place("Evening in La Latina", "La Latina, Madrid", R.drawable.la_latina));
+        ArrayList<Place> places = new ArrayList<>();
+        places.add(new Place(R.string.hotel_victoria, R.string.hotel_victoria_address, R.drawable.hotel_victoria));
+        places.add(new Place(R.string.medialab_prado, R.string.medialab_prado_address, R.drawable.medialab_prado));
+        places.add(new Place(R.string.caixa_forum, R.string.caixa_forum_address, R.drawable.caixa_forum));
+        places.add(new Place(R.string.museo_del_prado, R.string.museo_del_prado_address, R.drawable.museo_del_prado));
+        places.add(new Place(R.string.la_latina, R.string.la_latina_address, R.drawable.la_latina));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.day_one);
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         return rootView;

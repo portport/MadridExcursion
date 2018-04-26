@@ -2,27 +2,27 @@ package com.example.android.madridexcursion;
 
 public class Place {
 
-    private String mPlaceName;
-    private String mPlaceAddress;
+    private int mPlaceName;
+    private int mPlaceAddress;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Place(String placeName, String placeAddress) {
+    public Place(int placeName, int placeAddress) {
         mPlaceName = placeName;
         mPlaceAddress = placeAddress;
     }
 
-    public Place(String placeName, String placeAddress, int imageResourceId) {
+    public Place(int placeName, int placeAddress, int imageResourceId) {
         mPlaceName = placeName;
         mPlaceAddress = placeAddress;
         mImageResourceId = imageResourceId;
     }
 
-    public String getPlaceName() {
+    public int getPlaceName() {
         return mPlaceName;
     }
 
-    public String getPlaceAdress() {
+    public int getPlaceAdress() {
         return mPlaceAddress;
     }
 

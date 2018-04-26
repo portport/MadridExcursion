@@ -26,18 +26,18 @@ public class TuesdayFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.places_list, container, false);
 
-        ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Barcelo Market", "Calle Barceló, 6, 28004 Madrid", R.drawable.barcelo_market));
-        places.add(new Place("Fundacion Giner Rios", "Paseo del General Martínez Campos, 14, 28010 Madrid", R.drawable.fundacion_giner_rios));
-        places.add(new Place("Fundacion de la Sota", "Calle de Bretón de los Herreros, 66, 28003 Madrid", R.drawable.fundacion_de_la_sota));
-        places.add(new Place("Torre BBVA", "Paseo de la Castellana, 81, 28046 Madrid", R.drawable.torre_bbva));
-        places.add(new Place("Gymnasio Maravillas", "Calle Guadalquivir, 9, 28002 Madrid", R.drawable.gymnasio_maravillas));
-        places.add(new Place("Fundacion Higueras Diaz", "Calle del Maestro Lassalle, 36, 28016 Madrid", R.drawable.fundacion_higueras_diaz));
-        places.add(new Place("Torres Blancas", "Av. de América, 37, 28002 Madrid", R.drawable.torres_blancas));
-        places.add(new Place("Evening in Salamanca", "Salamanca, Madrid", R.drawable.salamanca));
+        ArrayList<Place> places = new ArrayList<>();
+        places.add(new Place(R.string.barcelo_market, R.string.barcelo_market_address, R.drawable.barcelo_market));
+        places.add(new Place(R.string.fundacion_giner, R.string.fundacion_giner_address, R.drawable.fundacion_giner_rios));
+        places.add(new Place(R.string.de_la_sota, R.string.lde_la_sota_address, R.drawable.fundacion_de_la_sota));
+        places.add(new Place(R.string.torre_bbva, R.string.torre_bbva_address, R.drawable.torre_bbva));
+        places.add(new Place(R.string.gymnasio_maravillas, R.string.gymnasio_maravillas_address, R.drawable.gymnasio_maravillas));
+        places.add(new Place(R.string.higueras_fundacion, R.string.higueras_fundacion_address, R.drawable.fundacion_higueras_diaz));
+        places.add(new Place(R.string.torres_blancas, R.string.torres_blancas_address, R.drawable.torres_blancas));
+        places.add(new Place(R.string.salamanca, R.string.salamanca_address, R.drawable.salamanca));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.day_two);
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         return rootView;

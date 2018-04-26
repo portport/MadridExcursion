@@ -25,16 +25,16 @@ public class ThursdayFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.places_list, container, false);
 
-        ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Museo Reina Sofia", "Calle de Santa Isabel, 52, 28012 Madrid", R.drawable.reina_sofia));
-        places.add(new Place("Norman Foster Foundation", "Calle del Monte Esquinza, 48, 28010 Madrid", R.drawable.norman_foster_foundation));
-        places.add(new Place("Matadero Madrid", "Paseo de la Chopera, 14, 28045 Madrid", R.drawable.matadero_madrid));
-        places.add(new Place("Arganzuela Bridge", "Av del Manzanares, 134, 28019 Madrid", R.drawable.arganzuela_bridge));
-        places.add(new Place("Carabanchel Public Housing", "Calle de los Morales, 25, 28054 Madrid", R.drawable.carabanchel_public_housing));
-        places.add(new Place("Restaurant XY", "to be defined", R.drawable.restaurant));
+        ArrayList<Place> places = new ArrayList<>();
+        places.add(new Place(R.string.reina_sofia, R.string.reina_sofia_address, R.drawable.reina_sofia));
+        places.add(new Place(R.string.norman_foster_foundation, R.string.norman_foster_foundation_address, R.drawable.norman_foster_foundation));
+        places.add(new Place(R.string.matadero_madrid, R.string.matadero_madrid_address, R.drawable.matadero_madrid));
+        places.add(new Place(R.string.arganzuela_bridge, R.string.arganzuela_bridge_address, R.drawable.arganzuela_bridge));
+        places.add(new Place(R.string.carabanchel_housing, R.string.carabanchel_housing_address, R.drawable.carabanchel_public_housing));
+        places.add(new Place(R.string.restaurant, R.string.restaurant_address, R.drawable.restaurant));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.day_four);
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         return rootView;
